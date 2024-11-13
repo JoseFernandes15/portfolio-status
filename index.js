@@ -12,8 +12,9 @@ async function fetchData() {
           if (!response.ok) {
             throw new Error('Erro ao buscar dados');
           }
+          console.log(response,"response");
       const data = await response.json();
-      console.log(data);
+      console.log(data,"data");
       
       const tableBody = document.getElementById('table-body');
       data.forEach(item => {
