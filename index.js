@@ -20,9 +20,9 @@ async function fetchData() {
       data.forEach(item => {
         const row = document.createElement('tr');
         row.innerHTML = `
-          <td>${item.id}</td>
-          <td>${item.data}</td>
-          <td>${item.resultado}</td>
+          <td>${item.ID}</td>
+          <td>${item.Data}</td>
+          <td>${item.Resultado}</td>
         `;
         tableBody.appendChild(row);
       });
