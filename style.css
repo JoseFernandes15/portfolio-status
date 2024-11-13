@@ -1,0 +1,23 @@
+body {
+    background-color: #0a1321;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+    font-family: Arial, sans-serif;
+    color: #d1d1d1;
+    user-select: none;
+  }
+  table {
+    width: 50%;
+    border-collapse: collapse;
+    text-align: center;
+    box-shadow: 0 0 7px #d1d1d1;
+  }
+  th, td {
+    padding: 10px;
+    border: 1px solid #d1d1d1;
+  }
+  th {
+
+  }
