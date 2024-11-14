@@ -3,7 +3,6 @@ async function fetchData() {
         const response = await fetch('https://verify.zepedrofernandessampaio.workers.dev/', {
             method: 'GET', // Método GET, pode ser alterado dependendo da API
             headers: {
-              'Authorization': 'Bearer ISAsf73bad8IASDA99H', // Substitua SUA_API_KEY pela sua chave
               'Content-Type': 'application/json'
             }
           });
@@ -12,9 +11,7 @@ async function fetchData() {
           if (!response.ok) {
             throw new Error('Erro ao buscar dados');
           }
-          console.log(response,"response");
       const data = await response.json();
-      console.log(data,"data");
       
       const tableBody = document.getElementById('table-body');
       data.forEach(item => {
