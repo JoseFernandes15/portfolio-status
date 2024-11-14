@@ -50,6 +50,18 @@ header .portfolio:hover {
     cursor: pointer;
 }
 
+.real_time{
+  font-size: large;
+  margin-top: 2rem ;
+}
+
+.down{
+color:red !important;
+}
+.up{
+color: green !important;
+}
+
 @media (max-width: 768px) {
   header {
       flex-direction: column;

@@ -34,8 +34,13 @@ async function fetchData() {
 
   function isUp(data){
     const isUp = document.getElementById('isUp');
-    if (data == "Tudo Certo!") isUp.innerHTML="O site está online e a funcionar como esperado!"
-    else isUp.innerHTML=data
+    if (data == "Tudo Certo!") {
+      isUp.innerHTML="O site está online e a funcionar como esperado!"
+      isUp.classList.add("up");
+    }else{
+      isUp.innerHTML=data
+      isUp.classList.add("down");
+    } 
   }
 
   fetchData();
