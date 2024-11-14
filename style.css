@@ -59,7 +59,7 @@ header .portfolio:hover {
 color:red !important;
 }
 .up{
-color: green !important;
+color: #00c700;
 }
 
 @media (max-width: 768px) {
