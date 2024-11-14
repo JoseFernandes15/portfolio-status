@@ -1,18 +1,5 @@
 async function fetchData() {
     try {
-      if (request.method === "OPTIONS") {
-        return new Response(null, {
-          headers: { 
-            "Content-Type": "application/json",
-            "X-Content-Type-Options": "nosniff",
-            "X-Frame-Options": "DENY",
-            "Referrer-Policy": "no-referrer",
-            "Access-Control-Allow-Headers": "Content-Type",
-            "Access-Control-Allow-Methods": "GET, OPTIONS",
-            "Access-Control-Allow-Origin": "https://status.josefernandes.pt",
-          },
-        });
-      }
         const response = await fetch('https://verify.zepedrofernandessampaio.workers.dev/', {
             method: 'GET', // Método GET, pode ser alterado dependendo da API
             headers: {
