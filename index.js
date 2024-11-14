@@ -3,7 +3,7 @@ async function fetchData() {
         const response = await fetch('https://verify.zepedrofernandessampaio.workers.dev/', {
             method: 'GET', // Método GET, pode ser alterado dependendo da API
             headers: {
-              'Authorization': 'Bearer ISAsf73bad8IASDAH', // Substitua SUA_API_KEY pela sua chave
+              'Authorization': 'Bearer ISAsf73bad8IASDA99H', // Substitua SUA_API_KEY pela sua chave
               'Content-Type': 'application/json'
             }
           });
