@@ -12,9 +12,9 @@ async function fetchData() {
             throw new Error('Erro ao buscar dados');
           }
       const data = await response.json();
-      
+      console.log(data);
       const tableBody = document.getElementById('table-body');
-      data.forEach(item => {
+      data.db.forEach(item => {
         const row = document.createElement('tr');
         row.innerHTML = `
           <td>${item.ID}</td>
